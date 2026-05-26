@@ -1,109 +1,219 @@
 <diagram program="umletino" version="15.1">
   <zoom_level>10</zoom_level>
-  
+
   <element>
-    <id>UMLGeneric</id>
-    <coordinates><x>80</x><y>30</y><w>120</w><h>40</h></coordinates>
-    <panel_attributes>_:Klient_
-bg=orange</panel_attributes>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>60</x>
+      <y>10</y>
+      <w>60</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Klient</panel_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
-    <coordinates><x>340</x><y>30</y><w>120</w><h>40</h></coordinates>
-    <panel_attributes>_:System_
-bg=cyan</panel_attributes>
+    <coordinates>
+      <x>330</x>
+      <y>40</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Interfejs Systemu</panel_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
-    <coordinates><x>600</x><y>30</y><w>120</w><h>40</h></coordinates>
-    <panel_attributes>_:Mechanik_
-bg=red</panel_attributes>
+    <coordinates>
+      <x>610</x>
+      <y>40</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>_:Mechanik_</panel_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
-    <coordinates><x>860</x><y>30</y><w>120</w><h>40</h></coordinates>
-    <panel_attributes>_:Baza Danych_
-bg=green</panel_attributes>
+    <coordinates>
+      <x>870</x>
+      <y>40</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>_:Baza Danych_</panel_attributes>
   </element>
 
   <element>
     <id>Relation</id>
-    <coordinates><x>130</x><y>70</y><w>30</w><h>1300</h></coordinates>
+    <coordinates>
+      <x>90</x>
+      <y>80</y>
+      <w>30</w>
+      <h>1160</h>
+    </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10;10;10;1280</additional_attributes>
+    <additional_attributes>10;10;10;1140</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>70</y><w>30</w><h>1300</h></coordinates>
+    <coordinates>
+      <x>390</x>
+      <y>80</y>
+      <w>30</w>
+      <h>1160</h>
+    </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10;10;10;1280</additional_attributes>
+    <additional_attributes>10;10;10;1140</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
-    <coordinates><x>650</x><y>70</y><w>30</w><h>1300</h></coordinates>
+    <coordinates>
+      <x>660</x>
+      <y>80</y>
+      <w>30</w>
+      <h>1160</h>
+    </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10;10;10;1280</additional_attributes>
+    <additional_attributes>10;10;10;1140</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
-    <coordinates><x>910</x><y>70</y><w>30</w><h>1300</h></coordinates>
+    <coordinates>
+      <x>920</x>
+      <y>80</y>
+      <w>30</w>
+      <h>1160</h>
+    </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10;10;10;1280</additional_attributes>
+    <additional_attributes>10;10;10;1140</additional_attributes>
+  </element>
+
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>90</x>
+      <y>110</y>
+      <w>20</w>
+      <h>1030</h>
+    </coordinates>
+    <panel_attributes></panel_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>390</x>
+      <y>110</y>
+      <w>20</w>
+      <h>1030</h>
+    </coordinates>
+    <panel_attributes></panel_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>660</x>
+      <y>160</y>
+      <w>20</w>
+      <h>850</h>
+    </coordinates>
+    <panel_attributes></panel_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>920</x>
+      <y>130</y>
+      <w>20</w>
+      <h>900</h>
+    </coordinates>
+    <panel_attributes></panel_attributes>
   </element>
 
   <element>
     <id>Relation</id>
-    <coordinates><x>130</x><y>90</y><w>290</w><h>40</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>100</x>
+      <y>100</y>
+      <w>310</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Składa zlecenie - wyjazd w teren()</panel_attributes>
-    <additional_attributes>270;20;10;20</additional_attributes>
+    <additional_attributes>10;20;290;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>120</y><w>550</w><h>40</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>120</y>
+      <w>540</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Zapisuje zlecenie do bazy i przypisuje mechanika()</panel_attributes>
-    <additional_attributes>530;20;10;20</additional_attributes>
+    <additional_attributes>10;20;520;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>150</y><w>290</w><h>40</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>150</y>
+      <w>280</w>
+      <h>40</h></coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Wyślij powiadomienie o nowym zleceniu()</panel_attributes>
-    <additional_attributes>270;20;10;20</additional_attributes>
+    <additional_attributes>10;20;260;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>180</y><w>290</w><h>40</h></coordinates>
+    <coordinates>
+      <x>400</x>
+      <y>180</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 Potwierdza rozpoczęcie zlecenia()</panel_attributes>
-    <additional_attributes>10;20;270;20</additional_attributes>
+    <additional_attributes>10;20;260;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>130</x><y>210</y><w>290</w><h>40</h></coordinates>
-    <panel_attributes>lt=.&lt;
+    <coordinates>
+      <x>100</x>
+      <y>210</y>
+      <w>310</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
 Wysyła powiadomienie do klienta()</panel_attributes>
-    <additional_attributes>10;20;270;20</additional_attributes>
+    <additional_attributes>10;20;290;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>250</y><w>290</w><h>40</h></coordinates>
+    <coordinates>
+      <x>400</x>
+      <y>240</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 Zgłoszenie przybycia na miejsce()</panel_attributes>
-    <additional_attributes>10;20;270;20</additional_attributes>
+    <additional_attributes>10;20;260;20</additional_attributes>
   </element>
 
   <element>
     <id>UMLFrame</id>
-    <coordinates><x>50</x><y>290</y><w>900</w><h>400</h></coordinates>
+    <coordinates>
+      <x>40</x>
+      <y>290</y>
+      <w>930</w>
+      <h>390</h>
+    </coordinates>
     <panel_attributes>alt
 -- [mechanik decyduje: Klient nieobecny / Anulowanie]
+
+
+
+
 
 
 -- [klient obecny - Rozpoczęcie naprawy]</panel_attributes>
@@ -111,73 +221,115 @@ Zgłoszenie przybycia na miejsce()</panel_attributes>
 
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>330</y><w>290</w><h>40</h></coordinates>
+    <coordinates>
+      <x>400</x>
+      <y>320</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 Anulowanie zlecenia()</panel_attributes>
-    <additional_attributes>10;20;270;20</additional_attributes>
+    <additional_attributes>10;20;260;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>360</y><w>210</w><h>50</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>350</y>
+      <w>220</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Zwolnienie terminu i mechanika()</panel_attributes>
-    <additional_attributes>10;30;40;30;40;10;10;10</additional_attributes>
+    <additional_attributes>10;10;40;10;40;40;10;40</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>400</y><w>160</w><h>50</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>400</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Naliczenie kary()</panel_attributes>
-    <additional_attributes>10;30;40;30;40;10;10;10</additional_attributes>
+    <additional_attributes>10;10;40;10;40;40;10;40</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>130</x><y>460</y><w>290</w><h>40</h></coordinates>
-    <panel_attributes>lt=.&lt;
+    <coordinates>
+      <x>100</x>
+      <y>450</y>
+      <w>310</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
 Wysłanie powiadomienia do klienta o karze()</panel_attributes>
-    <additional_attributes>10;20;270;20</additional_attributes>
+    <additional_attributes>10;20;290;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>130</x><y>500</y><w>290</w><h>40</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>100</x>
+      <y>490</y>
+      <w>310</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Opłacenie kary umownej()</panel_attributes>
-    <additional_attributes>270;20;10;20</additional_attributes>
+    <additional_attributes>10;20;290;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>530</y><w>190</w><h>50</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>520</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Zapisz status płatności()</panel_attributes>
-    <additional_attributes>10;30;40;30;40;10;10;10</additional_attributes>
+    <additional_attributes>10;10;40;10;40;40;10;40</additional_attributes>
   </element>
 
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>590</y><w>290</w><h>40</h></coordinates>
+    <coordinates>
+      <x>400</x>
+      <y>590</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 Zgłoszenie rozpoczęcia naprawy()</panel_attributes>
-    <additional_attributes>10;20;270;20</additional_attributes>
+    <additional_attributes>10;20;260;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>620</y><w>550</w><h>40</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>620</y>
+      <w>540</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Zmień status naprawy na "w trakcie"()</panel_attributes>
-    <additional_attributes>530;20;10;20</additional_attributes>
+    <additional_attributes>10;20;520;20</additional_attributes>
   </element>
 
   <element>
     <id>UMLFrame</id>
-    <coordinates><x>100</x><y>680</y><w>820</w><h>500</h></coordinates>
+    <coordinates>
+      <x>40</x>
+      <y>700</y>
+      <w>930</w>
+      <h>420</h>
+    </coordinates>
     <panel_attributes>alt
 -- [mechanik decyduje: Wymagane holowanie]
+
+
+
 
 
 
@@ -186,65 +338,100 @@ Zmień status naprawy na "w trakcie"()</panel_attributes>
 
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>720</y><w>290</w><h>40</h></coordinates>
+    <coordinates>
+      <x>400</x>
+      <y>730</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 Zgłoszenie konieczności holowania()</panel_attributes>
-    <additional_attributes>10;20;270;20</additional_attributes>
+    <additional_attributes>10;20;260;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>760</y><w>550</w><h>40</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>760</y>
+      <w>540</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Przydziel lawetę i mechanika z uprawnieniami()</panel_attributes>
-    <additional_attributes>530;20;10;20</additional_attributes>
+    <additional_attributes>10;20;520;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>790</y><w>160</w><h>50</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>790</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Przypisanie lawety()</panel_attributes>
-    <additional_attributes>10;30;40;30;40;10;10;10</additional_attributes>
+    <additional_attributes>10;10;40;10;40;40;10;40</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>830</y><w>550</w><h>40</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>840</y>
+      <w>540</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Zmień typ zlecenia na holowanie()</panel_attributes>
-    <additional_attributes>530;20;10;20</additional_attributes>
+    <additional_attributes>10;20;520;20</additional_attributes>
   </element>
 
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>890</y><w>290</w><h>40</h></coordinates>
+    <coordinates>
+      <x>400</x>
+      <y>920</y>
+      <w>280</w>
+      <h>40</h>
+    </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 Zgłoszenie zakończenia naprawy()</panel_attributes>
-    <additional_attributes>10;20;270;20</additional_attributes>
+    <additional_attributes>10;20;260;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>930</y><w>550</w><h>40</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>950</y>
+      <w>540</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Zmień status naprawy na "zakończona"()</panel_attributes>
-    <additional_attributes>530;20;10;20</additional_attributes>
+    <additional_attributes>10;20;520;20</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>390</x><y>960</y><w>170</w><h>50</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>400</x>
+      <y>980</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Generuj protokół z naprawy()</panel_attributes>
-    <additional_attributes>10;30;40;30;40;10;10;10</additional_attributes>
+    <additional_attributes>10;10;40;10;40;40;10;40</additional_attributes>
   </element>
-  
   <element>
     <id>Relation</id>
-    <coordinates><x>130</x><y>1020</y><w>290</w><h>40</h></coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <coordinates>
+      <x>100</x>
+      <y>1040</y>
+      <w>310</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
 Opłać zlecenie()</panel_attributes>
-    <additional_attributes>270;20;10;20</additional_attributes>
+    <additional_attributes>10;20;290;20</additional_attributes>
   </element>
+
 </diagram>
