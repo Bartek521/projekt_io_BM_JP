@@ -1,1 +1,66 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level></diagram>
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLSpecialState</id><coordinates><x>0</x><y>280</y><w>10</w><h>10</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>5</x><y>275</y><w>150</w><h>20</h></coordinates><panel_attributes>lt=-&gt;
+utworzenieZlecenia() / GenerujPodtwierdzenie()</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>145</x><y>275</y><w>60</w><h>20</h></coordinates><panel_attributes>czeka na przyjęcie
+--
+
+
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>85</x><y>290</y><w>155</w><h>95</h></coordinates><panel_attributes>lt=-&gt;
+
+
+after(30 min)[nieobecność klienta] / anulujZlecenie()
+</panel_attributes><additional_attributes>140;10;140;130;280;130</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>275</y><w>205</w><h>20</h></coordinates><panel_attributes>lt=-&gt;
+when(dataRealizacji)[typ == Wyjazdowe] / aktualizujStatusZlecenia()</panel_attributes><additional_attributes>10;20;390;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>395</x><y>270</y><w>80</w><h>30</h></coordinates><panel_attributes>w drodze
+(Dla usługi wyjazdowej)
+--
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>225</x><y>340</y><w>80</w><h>40</h></coordinates><panel_attributes>anulowanie
+--
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>295</y><w>195</w><h>60</h></coordinates><panel_attributes>lt=-&gt;
+after(15 min)[brak kontaktu na miejscu] / anulujZlecenie(</panel_attributes><additional_attributes>330;10;330;100;10;100</additional_attributes></element><element><id>UMLState</id><coordinates><x>460</x><y>170</y><w>85</w><h>40</h></coordinates><panel_attributes>W trakcie naprawy
+(w warsztacie)
+--
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>600</x><y>270</y><w>90</w><h>30</h></coordinates><panel_attributes>rozpoczęto w terenie
+(Dla usługi wyjazdowej)
+--
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>665</x><y>335</y><w>90</w><h>25</h></coordinates><panel_attributes>naprawione
+--
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>500</x><y>410</y><w>90</w><h>25</h></coordinates><panel_attributes>zakończone
+--
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>550</x><y>480</y><w>10</w><h>10</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>180</y><w>245</w><h>165</h></coordinates><panel_attributes>lt=-&gt;
+zakonczenieNaprawy() / aktualizujStatusZlecenia(
+</panel_attributes><additional_attributes>10;20;370;20;370;310</additional_attributes></element><element><id>Relation</id><coordinates><x>685</x><y>280</y><w>210</w><h>65</h></coordinates><panel_attributes>lt=-&gt;
+zakonczeniePracy()[naprawa udana] / aktualizujStatusZlecenia(</panel_attributes><additional_attributes>10;10;50;10;50;110</additional_attributes></element><element><id>Relation</id><coordinates><x>465</x><y>275</y><w>150</w><h>20</h></coordinates><panel_attributes>lt=-&gt;
+przybycieNaMiejsce() / aktualizujStatusZlecenia()</panel_attributes><additional_attributes>20;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>175</y><w>330</w><h>110</h></coordinates><panel_attributes>lt=-&gt;
+skanowanieKoduQR()[typ == Stacjonarne LUB typ == Holowanie] / aktualizujStatusZlecenia()</panel_attributes><additional_attributes>70;200;70;20;640;20</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>260</x><y>440</y><w>10</w><h>10</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>255</x><y>375</y><w>15</w><h>75</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>515</x><y>340</y><w>155</w><h>80</h></coordinates><panel_attributes>lt=-&gt;
+uregulowaniePłatności() / GenerujProtokuł()</panel_attributes><additional_attributes>290;20;80;20;80;140</additional_attributes></element><element><id>Relation</id><coordinates><x>545</x><y>430</y><w>15</w><h>60</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>190</y><w>190</w><h>90</h></coordinates><panel_attributes>lt=-&gt;
+stwierdzeniePowaznejUsterki()[wymaga warsztatu] / Zarezerwuj()</panel_attributes><additional_attributes>210;160;210;20;20;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>620</x><y>375</y><w>355</w><h>180</h></coordinates><panel_attributes>czeka na przyjęcie – zlecenie zostało pomyślnie utworzone w bazie danych i 
+oczekuje na nadejście planowanej daty realizacji lub przybycie klienta.
+  
+w drodze – status aktywny dla zleceń o charakterze wyjazdowym, w którym 
+przypisany mechanik przemieszcza się pod adres wskazany przez klienta.  
+
+anulowanie – konto zlecenia zostaje przerwane i 
+zamknięte bez realizacji z powodu rezygnacji lub nieobecności klienta.  
+
+W trakcie naprawy – pojazd znajduje się fizycznie na hali warsztatowej, 
+gdzie mechanicy prowadzą zaawansowane prace naprawcze.  
+
+rozpoczęto w terenie – mechanik dotarł na miejsce awarii i przystąpił do diagnostyki lub mobilnej próby usunięcia usterki.  
+
+naprawione – wszystkie czynności techniczne zostały pomyślnie sfinalizowane, 
+a pojazd oczekuje na odbiór.  
+
+zakończone – klient uregulował należność finansową, system wygenerował protokół końcowy, 
+a zlecenie zostało pomyślnie zamknięte.</panel_attributes><additional_attributes></additional_attributes></element></diagram>
