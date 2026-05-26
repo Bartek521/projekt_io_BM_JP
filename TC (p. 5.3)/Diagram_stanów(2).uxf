@@ -1,1 +1,36 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level></diagram>
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLSpecialState</id><coordinates><x>40</x><y>48</y><w>16</w><h>16</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>48</y><w>96</w><h>88</h></coordinates><panel_attributes>lt=-&gt;
+</panel_attributes><additional_attributes>10;10;100;90</additional_attributes></element><element><id>UMLState</id><coordinates><x>104</x><y>120</y><w>120</w><h>32</h></coordinates><panel_attributes>wolna
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>104</x><y>216</y><w>120</w><h>32</h></coordinates><panel_attributes>Zarezerwowana
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>144</y><w>160</w><h>88</h></coordinates><panel_attributes>lt=-&gt;
+Zarezerwuj()
+StatusLawety =zarezerwowana</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>104</x><y>144</y><w>112</w><h>88</h></coordinates><panel_attributes>lt=&lt;-
+Zdejmijrezerwację()
+StatusLawety=wolna</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLState</id><coordinates><x>112</x><y>296</y><w>120</w><h>32</h></coordinates><panel_attributes>W trasie do klienta
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>112</x><y>240</y><w>128</w><h>72</h></coordinates><panel_attributes>lt=-&gt;
+wyjazdWTeren()/
+StatusLawety =w trasie</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLState</id><coordinates><x>424</x><y>112</y><w>72</w><h>32</h></coordinates><panel_attributes>Uszkodzona
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>112</y><w>224</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+ZglosAwarie()
+StatusLawety=awaria</panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>112</x><y>392</y><w>120</w><h>32</h></coordinates><panel_attributes>Powrót do warsztatu 
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>320</y><w>136</w><h>88</h></coordinates><panel_attributes>lt=-&gt;
+Holowanie()
+StatusLawety = holowanie</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>0</x><y>128</y><w>128</w><h>304</h></coordinates><panel_attributes>lt=-&gt;
+dojazd do serwisu/
+ZdejmijRezerwację()
+StatusLawety =wolna</panel_attributes><additional_attributes>140;360;10;360;10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>224</x><y>136</y><w>256</w><h>208</h></coordinates><panel_attributes>lt=-&gt;
+ZglosAwarie()
+StatusLawety=awaria</panel_attributes><additional_attributes>10;230;270;230;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>224</x><y>136</y><w>320</w><h>288</h></coordinates><panel_attributes>lt=-&gt;
+ZglosAwarie()
+StatusLawety=awaria</panel_attributes><additional_attributes>10;330;330;330;330;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>424</x><y>32</y><w>72</w><h>32</h></coordinates><panel_attributes>Usuń
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>56</y><w>48</w><h>72</h></coordinates><panel_attributes>lt=-&gt;
+usuń()</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>528</x><y>0</y><w>16</w><h>16</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>0</y><w>64</w><h>48</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;40;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>40</y><w>232</w><h>96</h></coordinates><panel_attributes>lt=-&gt;
+usuń()</panel_attributes><additional_attributes>10;100;10;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>112</x><y>320</y><w>96</w><h>88</h></coordinates><panel_attributes>lt=-&gt;
+Brak klienta
+StatusLawety = 
+w trasie</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element></diagram>
