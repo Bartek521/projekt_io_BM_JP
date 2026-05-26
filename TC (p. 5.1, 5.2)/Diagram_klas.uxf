@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>9</x><y>261</y><w>99</w><h>153</h></coordinates><panel_attributes>Użytkownik
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>8</x><y>232</y><w>88</w><h>136</h></coordinates><panel_attributes>Użytkownik
 --
 -int id
 -string email
@@ -9,14 +9,14 @@
 --
 +zaloguj()
 +wyloguj()
-+rejstracja()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>621</y><w>180</w><h>108</h></coordinates><panel_attributes>Klient
++rejstracja()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>552</y><w>160</w><h>96</h></coordinates><panel_attributes>Klient
 --
 +rezerwujWizyte()
 +anulujZlecenie()
 +złóż reklamację ()
 +monitorujStatusnaprawy()
 +monitorujStatusreklamacji()
-+rejstracja()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>423</y><w>153</w><h>144</h></coordinates><panel_attributes>Mechanik
++rejstracja()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>376</y><w>136</w><h>128</h></coordinates><panel_attributes>Mechanik
 --
 - int id_mechanika
 - string pesel
@@ -26,18 +26,18 @@
 - bool czyDostepny
 -
 + aktualizujStatusZlecenia()
-+ zglosBrakCzesci()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>243</y><w>153</w><h>108</h></coordinates><panel_attributes>Szef
++ zglosBrakCzesci()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>168</x><y>192</y><w>136</w><h>96</h></coordinates><panel_attributes>Szef
 --
 +rezerwujWizyte()
 +dodajMechanika()
 +zarzadzajMagazynem()
 +rozpatrzReklamacje()
-+generujRaporty()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>270</y><w>108</w><h>36</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>100;10;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>18</x><y>927</y><w>126</w><h>81</h></coordinates><panel_attributes>Pojazd
++generujRaporty()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>88</x><y>216</y><w>96</w><h>56</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>100;10;80;10;80;50;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>16</x><y>736</y><w>112</w><h>72</h></coordinates><panel_attributes>Pojazd
 --
 - string marka
 - string model
 - string nrRejestracyjny
-- string vin</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>891</x><y>261</y><w>153</w><h>180</h></coordinates><panel_attributes>Zlecenie 
+- string vin</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>792</x><y>232</y><w>136</w><h>160</h></coordinates><panel_attributes>Zlecenie 
 --
 - int id_zlecenia
 - int idKlienta
@@ -50,13 +50,13 @@
 -
 + edytujDane()
 + GenerujPodtwierdzenie()
-+ GenerujProtokuł()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1116</x><y>801</y><w>126</w><h>99</h></coordinates><panel_attributes>Protokół
++ GenerujProtokuł()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>992</x><y>712</y><w>112</w><h>88</h></coordinates><panel_attributes>Protokół
 --
 -int id_zlecenia
 - typ zleenia
 - string opis naprawy
 - double kosztCałkowity
-- dataTime dataWystawienia</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1152</x><y>288</y><w>126</w><h>117</h></coordinates><panel_attributes>Część
+- dataTime dataWystawienia</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1008</x><y>256</y><w>112</w><h>104</h></coordinates><panel_attributes>Część
 --
 - int idCzęści
 - string nazwa
@@ -64,22 +64,22 @@
 - int ilość
 -
 +aktualizujIlość()
-+aktualizujCenę()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>837</x><y>846</y><w>126</w><h>72</h></coordinates><panel_attributes>Stanowisko
++aktualizujCenę()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>736</x><y>744</y><w>112</w><h>64</h></coordinates><panel_attributes>Stanowisko
 --
 - Id_stanowiska
 - bool czy_wolne
 -
-+ZajęcieStanowiska()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>801</x><y>567</y><w>153</w><h>72</h></coordinates><panel_attributes>Zlecenie stacjonarne
++ZajęcieStanowiska()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>712</x><y>504</y><w>136</w><h>64</h></coordinates><panel_attributes>Zlecenie stacjonarne
 --
 - string opisUsterki
 - enum rodzajUszkodzenia
 -
-+ edytujDane()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1314</x><y>828</y><w>126</w><h>99</h></coordinates><panel_attributes>Enum 
++ edytujDane()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1280</x><y>376</y><w>112</w><h>88</h></coordinates><panel_attributes>Enum 
 Status
 --
 - naprawione
 - w trakcie naprawy
-- czeka na przyjęcie</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>657</x><y>270</y><w>153</w><h>90</h></coordinates><panel_attributes>Zlecenie holowania
+- czeka na przyjęcie</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>584</x><y>240</y><w>136</w><h>80</h></coordinates><panel_attributes>Zlecenie holowania
 --
 - id_pojazduHolowniczego
 - string opisUsterki
@@ -87,13 +87,13 @@ Status
 - bool AutoOdpala
 - enum rodzajUszkodzenia
 -
-+ edytujDane()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1116</x><y>594</y><w>144</w><h>90</h></coordinates><panel_attributes>Zlecenie wyjazdowe
++ edytujDane()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>984</x><y>456</y><w>128</w><h>80</h></coordinates><panel_attributes>Zlecenie wyjazdowe
 --
 - string opisUsterki
 - string adres
 - enum rodzajUszkodzenia
 -
-+ edytujDane()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>378</y><w>99</w><h>108</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>90;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>405</y><w>63</w><h>234</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>50;240;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>675</x><y>0</y><w>126</w><h>180</h></coordinates><panel_attributes>Pojazd holowniczy
++ edytujDane()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>88</x><y>336</y><w>88</w><h>96</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>90;100;50;100;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>48</x><y>360</y><w>24</w><h>208</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>10;240;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>0</y><w>112</w><h>160</h></coordinates><panel_attributes>Pojazd holowniczy
 --
 - id_pojazduHolowniczego
 - string marka
@@ -104,85 +104,85 @@ Status
 - bool czyWolny
 -
 - Zarezerwuj()
-- Zdejmijrezerwację()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>801</x><y>297</y><w>108</w><h>27</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>873</x><y>432</y><w>81</w><h>153</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>70;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>1035</x><y>414</y><w>180</w><h>198</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>10;10;180;200</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1350</x><y>333</y><w>126</w><h>63</h></coordinates><panel_attributes>Magazyn Część
+- Zdejmijrezerwację()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>712</x><y>264</y><w>96</w><h>24</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>776</x><y>384</y><w>72</w><h>136</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>70;10;70;50;10;50;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>368</y><w>152</w><h>104</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>10;10;170;10;170;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1200</x><y>296</y><w>112</w><h>56</h></coordinates><panel_attributes>Magazyn Część
 --
 - list &lt;część&gt;
 -
-+aktualizujStan()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>720</y><w>63</w><h>225</h></coordinates><panel_attributes>lt=-
++aktualizujStan()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>48</x><y>640</y><w>56</w><h>112</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-posiada</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>342</y><w>72</w><h>99</h></coordinates><panel_attributes>lt=-
+posiada</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>232</x><y>280</y><w>64</w><h>112</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
 zarządza
-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>702</x><y>171</y><w>72</w><h>117</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>624</x><y>152</y><w>64</w><h>104</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=1
-korzysta</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>657</x><y>846</y><w>126</w><h>99</h></coordinates><panel_attributes>Podtwierdzenie
+korzysta</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>568</x><y>848</y><w>112</w><h>88</h></coordinates><panel_attributes>Podtwierdzenie
 --
 -int id_zlecenia
 - dataTime Data
 - string vin
 - enum rodzajUszkodzenia
-- dataTime dataWystawienia</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>675</y><w>414</w><h>189</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-Generuje</panel_attributes><additional_attributes>440;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>693</x><y>630</y><w>153</w><h>234</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-Generuje</panel_attributes><additional_attributes>150;10;10;240</additional_attributes></element><element><id>Relation</id><coordinates><x>675</x><y>351</y><w>72</w><h>513</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-Generuje</panel_attributes><additional_attributes>10;10;10;550</additional_attributes></element><element><id>Relation</id><coordinates><x>1179</x><y>675</y><w>81</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-Generuje</panel_attributes><additional_attributes>10;10;20;140</additional_attributes></element><element><id>Relation</id><coordinates><x>738</x><y>351</y><w>405</w><h>468</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-Generuje</panel_attributes><additional_attributes>10;10;260;180;430;500</additional_attributes></element><element><id>Relation</id><coordinates><x>945</x><y>603</y><w>189</w><h>252</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-Generuje</panel_attributes><additional_attributes>10;10;190;260</additional_attributes></element><element><id>Relation</id><coordinates><x>864</x><y>630</y><w>81</w><h>234</h></coordinates><panel_attributes>lt=-
+- dataTime dataWystawienia</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>624</x><y>512</y><w>376</w><h>352</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+Generuje</panel_attributes><additional_attributes>450;10;390;10;390;280;10;280;10;420</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>560</y><w>152</w><h>304</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+Generuje</panel_attributes><additional_attributes>170;10;170;200;10;200;10;360</additional_attributes></element><element><id>Relation</id><coordinates><x>584</x><y>312</y><w>64</w><h>552</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+Generuje</panel_attributes><additional_attributes>10;10;10;670</additional_attributes></element><element><id>Relation</id><coordinates><x>1040</x><y>528</y><w>64</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+Generuje</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>688</x><y>320</y><w>320</w><h>416</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+Generuje</panel_attributes><additional_attributes>10;10;10;110;320;110;320;500;380;500</additional_attributes></element><element><id>Relation</id><coordinates><x>832</x><y>560</y><w>176</w><h>208</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+Generuje</panel_attributes><additional_attributes>10;10;10;110;60;110;60;240;200;240</additional_attributes></element><element><id>Relation</id><coordinates><x>784</x><y>560</y><w>64</w><h>200</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=1
-korzysta</panel_attributes><additional_attributes>40;240;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1269</x><y>342</y><w>99</w><h>45</h></coordinates><panel_attributes>lt=-
+korzysta</panel_attributes><additional_attributes>10;230;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1112</x><y>304</y><w>104</w><h>40</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-przechowuje</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1287</x><y>639</y><w>126</w><h>54</h></coordinates><panel_attributes>HistoriaProtokołów
+przechowuje</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1144</x><y>568</y><w>112</w><h>48</h></coordinates><panel_attributes>HistoriaProtokołów
 --
-- list&lt;protokół</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1233</x><y>684</y><w>135</w><h>171</h></coordinates><panel_attributes>lt=-
+- list&lt;protokół</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1096</x><y>608</y><w>144</w><h>160</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-przechowuje</panel_attributes><additional_attributes>110;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>1035</x><y>333</y><w>135</w><h>45</h></coordinates><panel_attributes>lt=-
+przechowuje</panel_attributes><additional_attributes>90;10;90;170;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>296</y><w>104</w><h>40</h></coordinates><panel_attributes>lt=-
 m1=*
 m2=1
-korzysta</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>351</y><w>504</w><h>315</h></coordinates><panel_attributes>lt=-
+korzysta</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>152</x><y>272</y><w>448</w><h>328</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-tworzy</panel_attributes><additional_attributes>10;330;350;250;540;10</additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>612</y><w>648</w><h>90</h></coordinates><panel_attributes>lt=-
+tworzy</panel_attributes><additional_attributes>10;380;420;380;420;10;540;10</additional_attributes></element><element><id>Relation</id><coordinates><x>152</x><y>544</y><w>576</w><h>80</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-tworzy</panel_attributes><additional_attributes>10;70;700;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>639</y><w>954</w><h>81</h></coordinates><panel_attributes>lt=-
+tworzy</panel_attributes><additional_attributes>10;70;480;70;480;10;700;10</additional_attributes></element><element><id>Relation</id><coordinates><x>152</x><y>496</y><w>848</w><h>144</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-tworzy</panel_attributes><additional_attributes>10;60;1040;10</additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>351</y><w>558</w><h>594</h></coordinates><panel_attributes>lt=-
+tworzy</panel_attributes><additional_attributes>10;150;940;150;940;10;1040;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>288</y><w>480</w><h>488</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-dotyczy</panel_attributes><additional_attributes>10;640;410;440;600;10</additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>630</y><w>684</w><h>333</h></coordinates><panel_attributes>lt=-
+dotyczy</panel_attributes><additional_attributes>10;580;430;580;430;490;550;490;550;10;580;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>560</y><w>608</w><h>240</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-dotyczy</panel_attributes><additional_attributes>10;350;490;200;740;10</additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>675</y><w>1044</w><h>324</h></coordinates><panel_attributes>lt=-
+dotyczy</panel_attributes><additional_attributes>10;270;450;270;450;180;680;180;680;10;740;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>528</y><w>904</w><h>312</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-dotyczy</panel_attributes><additional_attributes>10;320;950;340;1140;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1260</x><y>972</y><w>126</w><h>99</h></coordinates><panel_attributes>Enum 
+dotyczy</panel_attributes><additional_attributes>10;330;450;330;450;370;1050;370;1050;80;1100;80;1100;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1280</x><y>504</y><w>112</w><h>88</h></coordinates><panel_attributes>Enum 
 RodzajUszkodzenia
 --
 - blacharsko/Lakiernicze
 - mechaniczne
-- elektryczne</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>261</y><w>342</w><h>54</h></coordinates><panel_attributes>lt=-
+- elektryczne</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>296</x><y>208</y><w>304</w><h>64</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-zarządza</panel_attributes><additional_attributes>10;20;360;30</additional_attributes></element><element><id>Relation</id><coordinates><x>324</x><y>288</y><w>351</w><h>162</h></coordinates><panel_attributes>lt=-
+zarządza</panel_attributes><additional_attributes>10;10;110;10;110;50;360;50</additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>256</y><w>312</w><h>160</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-realizuje</panel_attributes><additional_attributes>10;160;370;10</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>288</y><w>486</w><h>324</h></coordinates><panel_attributes>lt=-
+realizuje</panel_attributes><additional_attributes>10;170;130;170;130;10;370;10</additional_attributes></element><element><id>Relation</id><coordinates><x>296</x><y>232</y><w>432</w><h>320</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-zarządza</panel_attributes><additional_attributes>10;10;520;340</additional_attributes></element><element><id>Relation</id><coordinates><x>333</x><y>324</y><w>801</w><h>306</h></coordinates><panel_attributes>lt=-
+zarządza</panel_attributes><additional_attributes>10;10;90;10;90;370;520;370</additional_attributes></element><element><id>Relation</id><coordinates><x>296</x><y>264</y><w>704</w><h>232</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-zarządza</panel_attributes><additional_attributes>10;10;530;180;870;320</additional_attributes></element><element><id>Relation</id><coordinates><x>324</x><y>450</y><w>495</w><h>180</h></coordinates><panel_attributes>lt=-
+zarządza</panel_attributes><additional_attributes>10;10;70;10;70;260;860;260</additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>400</y><w>440</w><h>136</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-realizuje</panel_attributes><additional_attributes>10;10;530;180</additional_attributes></element><element><id>Relation</id><coordinates><x>324</x><y>540</y><w>810</w><h>171</h></coordinates><panel_attributes>lt=-
+realizuje</panel_attributes><additional_attributes>10;10;130;10;130;140;530;140</additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>424</y><w>712</w><h>88</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=*
-realizuje</panel_attributes><additional_attributes>10;10;570;170;880;140</additional_attributes></element></diagram>
+realizuje</panel_attributes><additional_attributes>10;10;770;20;770;80;870;80</additional_attributes></element></diagram>
