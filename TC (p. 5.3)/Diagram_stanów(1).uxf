@@ -1,1 +1,31 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level></diagram>
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLSpecialState</id><coordinates><x>378</x><y>99</y><w>18</w><h>18</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>108</y><w>171</w><h>90</h></coordinates><panel_attributes>lt=-&gt;
+Wprowadzenie nowej części</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLState</id><coordinates><x>342</x><y>180</y><w>81</w><h>72</h></coordinates><panel_attributes>Dostępna
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>279</x><y>243</y><w>252</w><h>108</h></coordinates><panel_attributes>lt=-&gt;
+edytuj Dane() lub stworzenie zlecenia/
+(częśc zostaje przypisana do zlecenia)</panel_attributes><additional_attributes>90;10;10;100</additional_attributes></element><element><id>UMLState</id><coordinates><x>216</x><y>333</y><w>81</w><h>36</h></coordinates><panel_attributes>Zarezerwowana
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>360</y><w>198</w><h>117</h></coordinates><panel_attributes>lt=-&gt;
+aktualizujilość()[0&lt;ilośc &lt;=2]/
+Status części = ostatnie kilka sztuk
+</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLState</id><coordinates><x>216</x><y>459</y><w>81</w><h>36</h></coordinates><panel_attributes>Zamontowana
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>189</y><w>144</w><h>162</h></coordinates><panel_attributes>lt=-&gt;
+anulujZlecenie()</panel_attributes><additional_attributes>50;160;50;80;10;80;10;10;140;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>540</x><y>387</y><w>81</w><h>36</h></coordinates><panel_attributes>Brak na stanie 
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>234</y><w>297</w><h>171</h></coordinates><panel_attributes>lt=-&gt;
+Zgłoś brak cześci()[ilość=0]/
+statusCzęści = brak na stanie</panel_attributes><additional_attributes>10;10;150;10;150;170</additional_attributes></element><element><id>Relation</id><coordinates><x>414</x><y>162</y><w>567</w><h>243</h></coordinates><panel_attributes>lt=-&gt;
+Aktyalizujilość()[2&gt;=ilość&gt;0]/
+status cześci= Ostatnie kilka sztuk
+lub 
+Aktyalizujilość()[ilość&gt;2]/
+status cześci=  dostępna
+</panel_attributes><additional_attributes>210;250;210;200;420;200;420;50;10;50</additional_attributes></element><element><id>UMLState</id><coordinates><x>549</x><y>495</y><w>81</w><h>36</h></coordinates><panel_attributes>wycofana
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>558</x><y>414</y><w>144</w><h>99</h></coordinates><panel_attributes>lt=-&gt;
+wycofaj()[ilość=0]/
+StatusCzęści=Wycofana</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>405</y><w>270</w><h>99</h></coordinates><panel_attributes>lt=-&gt;
+aktualizujilość()[ilośc&lt;0]/
+Status części = brak na stanie
+</panel_attributes><additional_attributes>10;70;190;70;190;10;280;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>684</x><y>675</y><w>18</w><h>18</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>594</x><y>522</y><w>117</w><h>171</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;110;170</additional_attributes></element></diagram>
