@@ -1,0 +1,69 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><element><id>UMLDeployment</id><coordinates><x>45</x><y>240</y><w>140</w><h>235</h></coordinates><panel_attributes>&lt;&lt;device&gt;&gt;
+Baza danych
+-
+CPU: 4x Xeon E 3.2 GHZ
+RAM: 8 GB
+SSD: 300 GB
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>50</x><y>290</y><w>50</w><h>30</h></coordinates><panel_attributes>symbol=component
+Component
+Baza
+Użytkowników</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>50</x><y>325</y><w>50</w><h>30</h></coordinates><panel_attributes>symbol=component
+Component
+Baza
+Aut</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>50</x><y>360</y><w>50</w><h>30</h></coordinates><panel_attributes>symbol=component
+Component
+Baza 
+zleceń</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>50</x><y>395</y><w>50</w><h>30</h></coordinates><panel_attributes>symbol=component
+Component
+Baza
+części</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>50</x><y>430</y><w>50</w><h>40</h></coordinates><panel_attributes>symbol=component
+Component
+Baza
+protokołów</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>230</x><y>240</y><w>175</w><h>235</h></coordinates><panel_attributes>&lt;&lt;device&gt;&gt;
+Serwer
+-
+CPU: 4x Xeon E 3.2 GHZ
+RAM: 16GB
+SSD: 250 GB</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>245</x><y>310</y><w>70</w><h>75</h></coordinates><panel_attributes>symbol=component
+Aplikacja webowa</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>315</y><w>75</w><h>25</h></coordinates><panel_attributes>lt=-()
+m2=IMechanik
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>335</y><w>75</w><h>25</h></coordinates><panel_attributes>lt=-()
+m2=IAdministrator
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>355</y><w>75</w><h>25</h></coordinates><panel_attributes>lt=-()
+m2=IKlient
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>305</y><w>55</w><h>20</h></coordinates><panel_attributes>lt=-()
+m2=IZapis</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>340</y><w>55</w><h>20</h></coordinates><panel_attributes>lt=-()
+m2=IZapis</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>375</y><w>55</w><h>20</h></coordinates><panel_attributes>lt=-()
+m2=IZapis</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>410</y><w>55</w><h>20</h></coordinates><panel_attributes>lt=-()
+m2=IZapis</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>450</y><w>55</w><h>20</h></coordinates><panel_attributes>lt=-()
+m2=IZapis</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>285</y><w>55</w><h>25</h></coordinates><panel_attributes>lt=-()
+m2=IOdczyt
+</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>320</y><w>55</w><h>25</h></coordinates><panel_attributes>lt=-()
+m2=IOdczyt
+</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>355</y><w>55</w><h>25</h></coordinates><panel_attributes>lt=-()
+m2=IOdczyt
+</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>390</y><w>55</w><h>25</h></coordinates><panel_attributes>lt=-()
+m2=IOdczyt
+</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>95</x><y>430</y><w>55</w><h>25</h></coordinates><panel_attributes>lt=-()
+m2=IOdczyt
+</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>290</y><w>115</w><h>35</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;210;50</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>305</y><w>115</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;210;40</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>325</y><w>115</w><h>15</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>335</y><w>115</w><h>20</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;20;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>340</y><w>115</w><h>35</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;50;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>350</y><w>115</w><h>40</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>360</y><w>115</w><h>50</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;80;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>370</y><w>115</w><h>55</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;90;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>380</y><w>120</w><h>70</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;120;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>385</y><w>130</w><h>80</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;140;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>175</x><y>260</y><w>65</w><h>20</h></coordinates><panel_attributes>lt=-
+&lt;&lt;Ethernet&gt;&gt;</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>450</x><y>320</y><w>85</w><h>80</h></coordinates><panel_attributes>&lt;&lt;device&gt;&gt;
+Komputer administratora
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>450</x><y>240</y><w>85</w><h>70</h></coordinates><panel_attributes>&lt;&lt;device&gt;&gt;
+Urządzenie mechanika
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>450</x><y>410</y><w>85</w><h>75</h></coordinates><panel_attributes>&lt;&lt;device&gt;&gt;
+Urządzenie klienta
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>395</x><y>455</y><w>65</w><h>20</h></coordinates><panel_attributes>lt=-
+&lt;&lt;Internet&gt;&gt;</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>395</x><y>370</y><w>65</w><h>20</h></coordinates><panel_attributes>lt=-
+&lt;&lt;Internet&gt;&gt;</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>395</x><y>265</y><w>65</w><h>20</h></coordinates><panel_attributes>lt=-
+&lt;&lt;Internet&gt;&gt;</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>455</x><y>360</y><w>65</w><h>30</h></coordinates><panel_attributes>symbol=component
+Component
+Przeglądarka
+- panel admina</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>460</x><y>445</y><w>50</w><h>30</h></coordinates><panel_attributes>symbol=component
+Component
+Przeglądarka
+-panel</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>455</x><y>270</y><w>65</w><h>35</h></coordinates><panel_attributes>symbol=component
+Component
+Przeglądarka
+-panel mechanika</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>375</x><y>295</y><w>85</w><h>40</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>375</x><y>340</y><w>85</w><h>35</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;150;50</additional_attributes></element><element><id>Relation</id><coordinates><x>375</x><y>365</y><w>95</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;170;160</additional_attributes></element></diagram>
